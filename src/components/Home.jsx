@@ -32,6 +32,7 @@ const Home = () => {
         const res = await searcher(searchValue).unwrap()
         if (searchValue.trim() !== '') {
           setPosts(res.posts)
+          alert('Searched!')
         } else {
           setPosts(data?.posts)
         }
